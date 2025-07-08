@@ -1,0 +1,141 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px; 
+    height: 50px; 
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px; 
+    height: 100px;
+}.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px; 
+    
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}.maroon-text {
+    color:  #630707;
+}.black-text {
+    color: black;
+}/* General body styling */
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Header and footer background */
+header, footer {
+    background-color: #f8f9fa;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem; /* Default size */
+    margin-top: 25px;
+}
+
+h4 {
+    margin-left: 200px;
+    margin-top: 20px;
+    color: #630707;
+    font-weight: bold;
+    font-size: 1.5rem; /* Default size */
+}
+
+/* FAQ section styling */
+.faq {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+/* Paragraph styling */
+p.sjvm {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 15px;
+}
+
+/* Image styling */
+.faq img {
+    width: 90%;  /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile responsiveness for smaller devices */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    h2 {
+        font-size: 2.5rem;  /* Reduce font size on smaller screens */
+        margin-top: 40px;
+    }
+
+    h4 {
+        margin-left: 20px; /* Reduce margin */
+        font-size: 1.25rem; /* Slightly smaller font for mobile */
+        padding: 0 20px; /* Less padding on smaller screens */
+    }
+
+    .faq {
+        margin-left: 20px; /* Reduce margin */
+        margin-right: 20px;
+    }
+
+    p.sjvm {
+        margin-left: 20px; /* Reduce margins for better readability */
+        margin-right: 20px;
+        padding: 0 20px; /* Less padding on smaller screens */
+    }
+}
+
+/* Responsive styling for very small devices like phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;  /* Further reduce font size on very small screens */
+        margin-top: 60px;
+    }
+
+    h4 {
+        font-size: 1.2rem; /* Smaller headings */
+        margin-left: 10px; /* Further reduce margin */
+    }
+
+    p.sjvm {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0 20px; /* Less padding on smaller screens */
+    }
+
+    .faq {
+        margin-left: 10px; /* Reduce margins for smaller screens */
+    }
+
+    .faq img {
+        width: 100%;  /* Ensure the image stays responsive */
+    }
+
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}

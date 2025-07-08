@@ -1,0 +1,138 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px; 
+    height: 50px; 
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px; 
+    height: 100px; 
+}.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px;   
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}.maroon-text {
+    color:  #630707;
+}.black-text {
+    color: black;
+}h2{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}p{
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}.video{
+   margin-left: 490px;
+}.history{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}p.ft{
+    text-align: center;
+    margin-top: 20px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh;
+    margin: 0 auto; 
+}
+
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 560px;
+    max-height: 315px; 
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 2.2em;
+        margin-top: 1.5em;
+    }
+    .video-container iframe {
+        max-width: 500px;
+        max-height: 280px;
+    }
+    p {
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+    }
+    .video-container iframe {
+        max-width: 90%;
+        max-height: 200px;
+    }
+    p {
+        font-size: 1em;
+    }
+    .history {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+        margin-top: 60px;
+    }
+    .video-container iframe {
+        max-width: 100%;
+        max-height: 200px;
+        padding: 0 20px; /* Less padding on smaller screens */
+
+    }
+    p {
+        font-size: 0.95em;
+        padding: 0 20px; /* Less padding on smaller screens */
+
+    }
+    .history {
+        padding: 0 5px;
+    }
+    .ft {
+        font-size: 0.9em;
+    }
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}
+

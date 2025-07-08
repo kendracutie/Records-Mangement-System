@@ -1,0 +1,131 @@
+/* General Styling */
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-top: 50px; /* Increased margin-top to bring the heading down */
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+/* Image Styling */
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img img {
+    width: 100%;  /* Responsive width */
+    max-width: 503px; /* Maximum width to prevent images from growing too large */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: cover; 
+    border: 2px solid #ddd;  /* Minimal border */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 4px;  /* Padding between image and border */
+    transition: transform 0.3s ease; /* Smooth effect for hover */
+}
+
+/* Hover effect on images */
+.img img:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Image Paragraph Styling */
+p.image {
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+
+
+/* Logo and Social Icons Styling */
+.logo {
+    position: absolute;
+    left: 55px;
+    top: 2%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoo img {
+    width: 100px;
+    height: 100px;
+}
+
+.top-social {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+.top-social a {
+    color: white;
+    margin-right: 6px;
+}
+
+/* Responsive Styling for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    h2 {
+        font-size: 2em;
+        margin-top: 40px; /* Adjusted for tablets */
+    }
+
+    p.image {
+        font-size: 1em;
+    }
+
+    .img img {
+        max-width: 100%; /* Ensure the image is responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em;
+        margin-top: 60px; /* Increased margin-top for mobile view */
+    }
+
+    p.image {
+        font-size: 0.95em;
+        padding: 0 20px; /* Less padding on smaller screens */
+    }
+
+    .img {
+        margin-left: 0; /* Center image on small screens */
+    }
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}

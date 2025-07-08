@@ -1,0 +1,242 @@
+/* Base Logo and Top Social Media Styles */
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.logo img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoo img {
+    width: 100px; 
+    height: 100px;
+}
+
+.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px; 
+}
+
+.top-social a {
+    color: white;
+    margin-right: 6px;
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+/* Wrapper for calendar and event form */
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between calendar and form */
+    margin-top: 30px; /* Space at the top */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Calendar styles */
+.calendar {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 2px solid #d1e7dd;
+    margin-bottom: 20px;
+}
+
+/* Event form container (to the right of the calendar) */
+.event-list-container {
+    flex: 1;
+    max-width: 400px; /* Limit width for the form */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1e7dd;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* Event form styling */
+.form-label {
+    color: #793232;
+}
+
+button.btn-primary {
+    background-color: #793232;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+button.btn-primary:hover {
+    background-color: #dfa974;
+}
+
+/* Calendar controls (previous/next buttons) */
+.month-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.month-controls button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.month-controls button:hover {
+    background-color: #dcdcdc;
+}
+
+.month-controls h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Calendar grid styles (days) */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.calendar-grid div {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.calendar-grid div:hover {
+    background-color: #e6f0f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-grid div.has-event {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.calendar-grid div.has-event:hover {
+    background-color: #bee5eb;
+}
+
+/* Event List - Right panel styling */
+.event-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.event-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.event-item:hover {
+    background-color: #e1e1e1;
+}
+
+/* Month Navigation Buttons */
+button.btn-sm {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn-sm:hover {
+    background-color: #e1e1e1;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+/* Add some responsive adjustments */
+@media (max-width: 768px) {
+    .calendar-container {
+        flex-direction: column; /* Stack calendar and event form vertically */
+        gap: 20px;
+    }
+    
+    .event-list-container {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .calendar {
+        max-width: 100%;
+    }
+}

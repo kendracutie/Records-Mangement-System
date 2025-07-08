@@ -1,0 +1,111 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px; 
+    height: 50px; 
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px;
+    height: 100px;
+}.top-social {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}.maroon-text {
+    color:  #630707;
+}.black-text {
+    color: black;
+}/* General Styles */
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.pt {
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.pastoral-team {
+    list-style-type: disc; /* Keeps the bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.pastoral-team li {
+    margin: 0; /* Remove margin */
+    padding-left: 20px; /* Adjust left padding for bullets */
+    line-height: 1.5; /* Increase line height for readability */
+    list-style-position: inside; /* Move bullets inside the list */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    /* Adjust heading for medium screens */
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 40px;
+    }
+
+    /* Adjust container margin and padding for medium screens */
+    .pt {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .pastoral-team {
+        padding-left: 20px; /* Ensure consistent padding for bullets */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust heading for small screens */
+    h2 {
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    /* Make the paragraph text more readable on mobile */
+    .pt {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust the list to fit smaller screens */
+    .pastoral-team {
+        padding-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Reduce the image size for mobile */
+    .logo img, .logoo img {
+        width: 40px;
+        height: 40px;
+    }
+}

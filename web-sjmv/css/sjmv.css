@@ -1,0 +1,136 @@
+/* Logo Styling */
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.logo img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoo img {
+    width: 100px; 
+    height: 100px; 
+    border: none;  /* No border for the logo */
+}
+
+/* Social Media Icons */
+.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px;  
+}
+
+.top-social a {
+    color: white;
+    margin-right: 6px;
+}
+
+/* St. John Mary Vianney Section */
+.sjmv {
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.sjmv h2 {
+    color:  #630707;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.pic {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.sjmv p {
+    max-width: 90%;
+    margin-left: 5%;
+    font-size: 3 em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-justify: inter-word;
+}
+
+/* Image Styling */
+.pic img {
+    width: 100%;  /* Responsive width */
+    max-width: 503px; /* Maximum width to prevent images from growing too large */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: cover; 
+    border: 2px solid #ddd;  /* Minimal border */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 4px;  /* Padding between image and border */
+    transition: transform 0.3s ease; /* Smooth effect for hover */
+}
+
+/* Hover effect on images */
+.pic img:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+
+
+/* For small screens (small tablets) */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    .sjmv {
+        font-size: 2.5em;
+        margin-top: 40px;
+    }
+
+    .sjmv p {
+        font-size: 14px;
+    }
+
+    .pic img {
+        max-width: 100%;  /* Resize image */
+    }
+}
+
+/* For extra small screens (mobile phones) */
+@media (max-width: 576px) {
+    .sjmv {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+
+    .sjmv p {
+        font-size: 0.9rem;
+    }
+
+    .pic img {
+        width: 100%;
+    }
+    /* Reduce the image size for mobile */
+    .logo img, .logoo img {
+        width: 40px;
+        height: 40px;
+    }
+}

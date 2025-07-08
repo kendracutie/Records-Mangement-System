@@ -1,0 +1,65 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px; 
+    height: 50px; 
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px;
+    height: 100px;
+}.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px;  
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+h4, .b-time {
+    color: rgb(255, 255, 255); /* Light beige text color */
+    text-shadow: 1px 1px 3px rgba(78, 8, 8, 0.9); /* Subtle shadow for contrast */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}

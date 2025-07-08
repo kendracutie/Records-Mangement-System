@@ -1,0 +1,304 @@
+
+.font-weight-dark {
+    color: #333; /* Dark color */
+}
+.card {
+    border-radius: 10px; /* Add border-radius to cards */
+    padding: 3px; /* Add padding to cards */
+}
+
+.card h4 {
+    margin: 10px 0; /* Add margin to h4 elements inside cards */
+}
+
+.btn-dark-red {
+    background-color: #8b0000; /* Dark red color */
+    border-color: #8b0000; /* Match the border color with the solid color */
+    color: white; /* Text color */
+}
+
+.btn-dark-red:hover {
+    background-color: #793232; /* Lighter shade of red on hover */
+    border-color: #cc0000; /* Border color on hover */
+    color: white;
+}
+
+body {
+            background-color: #f3f4f6;
+            font-family: 'Cabin', sans-serif;
+        }
+        .card {
+            border-radius: 15px;
+            margin-top: 20px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            margin-bottom: 20px;
+            color: #343a40;
+        font-weight: bold; /* Emphasized title */
+
+        }
+        .supporting-docs img {
+            width: 280px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        h5 {
+            margin-top: 20px;
+            color: #495057;
+        }
+        .container {
+            max-width: 800px;
+        }
+ 
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.logo img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoo img {
+    width: 100px; 
+    height: 100px;
+}
+
+.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px; 
+}
+
+.top-social a {
+    color: white;
+    margin-right: 6px;
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+/* Wrapper for calendar and event form */
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between calendar and form */
+    margin-top: 30px; /* Space at the top */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Calendar styles */
+.calendar {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Event form container (to the right of the calendar) */
+.event-list-container {
+    flex: 1;
+    max-width: 400px; /* Limit width for the form */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #793232;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: auto;
+}
+/* Event form styling */
+.form-label {
+    color: #793232;
+}
+
+button.btn {
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+button.btn:hover {
+    background-color: #dfa974;
+}
+
+/* Calendar controls (previous/next buttons) */
+.month-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.month-controls button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #793232;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.month-controls button:hover {
+    background-color: #dcdcdc;
+}
+
+.month-controls h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Calendar grid styles (days) */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.calendar-grid div {
+    padding: 15px;
+    border: 1px solid #793232;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.calendar-grid div:hover {
+    background-color: #a67f7f;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-grid div.has-event {
+    background-color: #dfa974;
+    border-color: #bee5eb;
+}
+
+.calendar-grid div.has-event:hover {
+    background-color: #ab7d7d;
+}
+
+/* Event List - Right panel styling */
+.event-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.event-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #793232;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.event-item:hover {
+    background-color: #dfa974;
+}
+
+/* Month Navigation Buttons */
+button.btn-sm {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn-sm:hover {
+    background-color: #dfa974;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}.text-center{
+    color: #793232;
+}
+
+/* Add some responsive adjustments */
+@media (max-width: 768px) {
+    .calendar-container {
+        flex-direction: column; /* Stack calendar and event form vertically */
+        gap: 20px;
+    }
+    
+    .event-list-container {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .calendar {
+        max-width: 100%;
+    }
+}

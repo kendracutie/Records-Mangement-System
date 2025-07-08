@@ -1,0 +1,120 @@
+
+
+.navbar-brand img {
+    border-radius: 90%;
+    width: 50px;
+    height: 50px;
+    margin: 1px 40px;
+}
+
+/* CSS for the login form */
+body {
+    font-family: Cabin, sans-serif !important;
+    background-image: url('bg.jpg'); /* Replace 'assets/bg.jpg' with the actual path to your background image */
+    background-size: cover;
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay for transparency effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 188, 188, 0.4); /* Semi-transparent overlay */
+    z-index: 1;
+}
+/* Content container */
+.container {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the overlay */
+    /* Additional styling for the container can go here */
+}
+.card-body {
+    text-align: center;
+    padding-top: 0px; /* Increase padding to adjust the height */
+}
+
+.card-body img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+
+
+.btn-primary {
+    border-radius: 5px;
+    background-color: #8b0000; /* Dark red color */
+    border-color: #8b0000; /* Match the border color with the solid color */
+    background-image: linear-gradient(to right, #793232, #983535); /* Gradient effect */
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, background-image 0.3s ease, transform 0.3s ease; /* Added transitions */
+    margin-bottom: 40px;
+}
+
+
+.btn-primary:hover {
+    background-color: #8b0000; /* Dark red background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.btn-link {
+    color: #f2f3f3;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Add margin to separate input fields */
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-120%); /* Adjust vertical position */
+    font-weight: normal; /* Remove bold */
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.form-group input {
+    width: 100%; /* Take up full width */
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Adjust spacing between form groups */
+.form-group + .form-group {
+    margin-top: 40px; /* Adjust as needed */
+}
+
+/* Floating effect for labels */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    transform: translateY(-150%) scale(0.8); /* Adjust vertical position and scale */
+}
+    

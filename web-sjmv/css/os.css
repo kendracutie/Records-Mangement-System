@@ -1,0 +1,133 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 18%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.logo img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logoo img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px;  
+}
+
+.top-social a {
+    color: white;
+    margin-right: 6px;
+}
+
+.priest-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.priest {
+    margin: 20px;
+    text-align: center;
+    flex: 0 1 300px;
+}
+
+img {
+    width: 500px;  
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.maroon-text {
+    color: #630707;
+}
+
+.black-text {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.pr {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    img {
+        width: 80%; 
+        height: auto; 
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .priest {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    img {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .priest {
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .logo, .logoo {
+        left: 20px; 
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}

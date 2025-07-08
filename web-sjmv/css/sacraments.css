@@ -1,0 +1,210 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px; 
+    height: 50px; 
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px; 
+    height: 100px; 
+}.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px; 
+    
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}.maroon-text {
+    color:  #793232;
+}.black-text {
+    color: black;
+}h2{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    gap: 60px; /* Space between us char space bawat pic*/
+    margin: 20px auto; 
+    max-width: 100%; 
+    justify-content: center; 
+}
+
+.grid-container > p{
+    color: white;
+}
+.sacrament {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; 
+    transition: background-color 0.3s; 
+}.sacrament::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(251, 181, 181, 0.346);
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    border-radius: 10px; 
+}
+.sacrament:hover::after {
+    opacity: 1; 
+}
+
+.sacrament:hover {
+    background: yellow; 
+}
+.sacrament img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter 0.3s;
+}
+
+.sacrament:hover img {
+    filter: brightness(0.8); /* Slight brightness change on hover */
+}
+
+.sacrament p {
+    display: inline; /* Make sure both text elements are on the same line */
+    margin-right: 10px; /* Space between the texts */
+    margin-left: 4px;
+}
+
+.sacrament .hover-text {
+    position: absolute;
+    bottom: 11px; /* Positioned at the bottom */
+    right: -7px; /* Adjust the left position */
+    background-color: rgba(0, 0, 0, 0.6); /* Slight dark background for readability */
+    color: white; /* Text color */
+    padding: 5px;
+    border-radius: 5px;
+    display: none; /* Hide the "See more..." text by default */
+}
+
+.sacrament:hover .hover-text {
+    display: inline; /* Show "See more..." when hovered */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+    background-color: #fff; 
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 80%; 
+    max-width: 600px;
+    max-height: 80%; 
+    overflow-y: auto; 
+    border-radius: 10px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+.modal-open {
+    overflow: hidden; 
+}
+
+
+.close {
+    color: #793232;
+    float: le;
+    font-size: 28px;
+    font-weight: bold;
+}.close {
+    color: #793232;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;    /* Distance from the top of the viewport */
+    right: 20px;  /* Distance from the right of the viewport */
+    z-index: 1000;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #793232; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+        gap: 20px; 
+    }
+
+    .sacrament img {
+        height: auto; 
+        max-height: 150px; 
+    }
+
+    .top-social {
+        top: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px; 
+    }
+
+    .close {
+        font-size: 24px; 
+        right: 10px; 
+    }
+
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}

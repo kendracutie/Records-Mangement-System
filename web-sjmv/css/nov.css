@@ -1,0 +1,126 @@
+.logo {
+    position: absolute;
+    left: 55px; 
+    top: 2%; 
+    border-radius: 50%; 
+    overflow: hidden;
+}.logo img {
+    width: 50px;
+    height: 50px;
+}.logoo {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    border-radius: 50%;
+    overflow: hidden;
+}.logoo img {
+    width: 100px; 
+    height: 100px; 
+}.top-social {
+    position: absolute;
+    right: 10px; 
+    top: 30px; 
+}.top-social a{
+    color: white;
+    margin-right: 6px;
+}.maroon-text {
+    color:  #630707;
+}.black-text {
+    color: black;
+}h2{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}h3{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 25px;
+}.holy{
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 23px;
+}p{
+    font-size: 18px;
+}
+/* General Styles */
+h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.holy {
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    font-size: 0.7em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        left: 20px; 
+    }
+
+    .logoo {
+        left: 15px; 
+        margin-top: -50px;
+    }
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .holy {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2.2em;
+        margin-top: 60px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .holy {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+    .logo img, .logoo img {
+        width: 40px; 
+        height: 40px; 
+    }
+}
